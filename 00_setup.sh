@@ -11,8 +11,8 @@ mkdir 01_bam_files
 mkdir 02_vcf
 mkdir 03_vcf
 mkdir 04_vcf
-mkdir 05_filtered_vcf_100kbp
-mkdir 05_filtered_vcf_100kbp/windows
+mkdir 05_filtered_vcf
+mkdir 05_filtered_vcf/windows
 mkdir 19_minys
 mkdir 20_align_script
 mkdir 21_genotype_script
