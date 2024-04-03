@@ -13,5 +13,8 @@ mkdir 03_vcf
 mkdir 04_vcf
 mkdir 05_filtered_vcf_100kbp
 mkdir 05_filtered_vcf_100kbp/windows
+mkdir 19_minys
 mkdir 20_align_script
 mkdir 21_genotype_script
+mkdir 22_filter_script
+mkdir 23_minys_script
