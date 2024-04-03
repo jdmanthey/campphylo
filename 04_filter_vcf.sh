@@ -20,3 +20,7 @@ region_array=$( head -n${SLURM_ARRAY_TASK_ID} ${workdir}/scaffolds.txt | tail -n
 vcftools --vcf ${workdir}/04_vcf/${region_array}.vcf --max-missing 0.9 --max-alleles 2 --max-maf 0.49 --recode --recode-INFO-all --out ${workdir}/05_filtered_vcf/${region_array}
 
 vcftools --vcf ${workdir}/04_vcf/${region_array}.vcf --keep new.txt --max-missing 1.0 --min-alleles 2 --max-alleles 2 --max-maf 0.49 --mac 2 --recode --recode-INFO-all --out ${workdir}/05_filtered_vcf/${region_array}_new
+
+bgzip ${workdir}/05_filtered_vcf/${region_array}.recode.vcf
+
+tabix ${workdir}/05_filtered_vcf/${region_array}.recode.vcf.gz
