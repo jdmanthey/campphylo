@@ -10,6 +10,7 @@ mkdir 01_blochmannia
 mkdir 01_bam_files
 mkdir 02_vcf
 mkdir 03_vcf
+mkdir 03_contam
 mkdir 04_vcf
 mkdir 05_filtered_vcf
 mkdir 05_filtered_vcf/windows
@@ -18,3 +19,5 @@ mkdir 20_align_script
 mkdir 21_genotype_script
 mkdir 22_filter_script
 mkdir 23_minys_script
+
+# copy the contam_check.r script to the 21_genotype_script directory
