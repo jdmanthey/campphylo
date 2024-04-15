@@ -54,9 +54,7 @@ C-308__new_
 C-310__new_
 C-319__modoc_east_
 C-326__laevissimus_
-SRR15845282__F_lemani_
-SRR15845293__F_lemani_
-SRR15845377__F_lemani_
 SRR25452767__floridanus_
 SRR25452768__floridanus_
 SRR25452771__floridanus_
+SRR1660457__Colobopsis_obliquus_
