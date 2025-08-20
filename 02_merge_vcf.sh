@@ -11,7 +11,7 @@
 source activate bcftools
 
 # define main working directory
-workdir=/lustre/scratch/jmanthey/09_antphylo
+workdir=/lustre/scratch/jmanthey/08_ant_phylo
 
 # define variables
 region_array=$( head -n${SLURM_ARRAY_TASK_ID} ${workdir}/scaffolds.txt | tail -n1 )
