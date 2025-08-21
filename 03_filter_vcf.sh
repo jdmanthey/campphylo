@@ -32,6 +32,7 @@ vcftools --vcf ${workdir}/04_vcf/${region_array}.vcf --keep new.txt --max-missin
 --min-alleles 2 --max-alleles 2 --max-maf 0.49 --mac 2 --recode --recode-INFO-all \
 --out ${workdir}/10_eems/${region_array}
 
+# filter for divergence measurement in genes
 # bedtools to extract cds regions
 # get header
 grep "^#" ${workdir}/05_filtered_vcf/${region_array}.recode.vcf > \
@@ -40,6 +41,10 @@ ${workdir}/06_divergence/${region_array}.vcf
 bedtools intersect -a ${workdir}/05_filtered_vcf/${region_array}.recode.vcf \
 -b /home/jmanthey/denovo_annotations/camp_round2_cds.gff >> \
 ${workdir}/06_divergence/${region_array}.vcf
+# further filter for missingness and ingroup only
+vcftools --vcf ${workdir}/06_divergence/${region_array}.vcf --keep ingroup.txt --max-missing 1.0 \
+--recode --recode-INFO-all --out ${workdir}/06_divergence/${region_array}_filtered
+
 
 # zip and index the stats files
 bgzip ${workdir}/05_filtered_vcf/${region_array}.recode.vcf
