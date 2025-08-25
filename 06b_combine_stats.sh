@@ -5,4 +5,4 @@ cd /lustre/scratch/jmanthey/08_ant_phylo/33_stats
 grep 'pop1' scaffold0001__10000001__10050000__stats.txt > ../window_stats.txt
 
 # add the stats to the file
-for i in $( ls *stats.txt ); do grep -v 'pop1' $i >> ../window_stats.txt; done
+for i in $( ls *__stats.txt ); do grep -v 'pop1' $i >> ../window_stats.txt; done
