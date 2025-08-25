@@ -3,6 +3,16 @@
 
 # reference genome already indexed from previous study
 
+#index blochmannia reference
+java -jar picard.jar CreateSequenceDictionary \
+R=/home/jmanthey/blochmannia/16b_pennunk.fasta \
+O=/home/jmanthey/blochmannia/16b_pennunk.dict
+
+bwa-mem2 index 16b_pennunk.fasta
+
+samtools faidx 16b_pennunk.fasta
+
+
 # make directories for organization during analyses
 mkdir 01_cleaned
 mkdir 01_mtDNA
