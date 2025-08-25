@@ -1,0 +1,16 @@
+C002__modoc_east_	modoc_east
+C041__modoc_east_	modoc_east
+C049__herculeanus_	herculeanus
+C050__herculeanus_	herculeanus
+C056__herculeanus_	herculeanus
+C105__herculeanus_	herculeanus
+C107__modoc_east_	modoc_east
+C126__modoc_east_	modoc_east
+C161__modoc_west_	modoc_west
+C177__modoc_west_	modoc_west
+C219__novaeboracensis_	novaeboracencis
+C227__novaeboracensis_	novaeboracencis
+C276__modoc_west_	modoc_west
+C402__novaeboracencis_	novaeboracencis
+C404__modoc_west_	modoc_west
+C408__novaeboracencis_	novaeboracencis
