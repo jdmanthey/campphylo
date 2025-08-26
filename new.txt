@@ -8,7 +8,6 @@ C065__new2_
 C207__new2_
 C303b__new_
 C304b__new_
-C305b__new_
 C306b__new_
 C308b__new_
 C310b__new2_
