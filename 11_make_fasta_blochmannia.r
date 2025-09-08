@@ -52,17 +52,9 @@ read_vcf <- function(input_file) {
 
 
 # make fasta files
-x <- read_vcf("total_filtered1.vcf.recode.vcf")
+x <- read_vcf("total_filtered.vcf.recode.vcf")
 
-create_fasta_from_vcf(x, "blochmannia_100percent.fasta", 10000)
-
-x <- read_vcf("total_filtered2.vcf.recode.vcf")
-
-create_fasta_from_vcf(x, "blochmannia_95percent.fasta", 10000)
-
-x <- read_vcf("total_filtered3.vcf.recode.vcf")
-
-create_fasta_from_vcf(x, "blochmannia_90percent.fasta", 10000)
+create_fasta_from_vcf(x, "blochmannia.fasta", 10000)
 
 
 
