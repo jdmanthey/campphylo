@@ -54,6 +54,6 @@ C402__novaeboracencis_	novaeboracensis
 C404__modoc_west_	modoc_west
 C408__novaeboracencis_	novaeboracensis
 C433__T_vicinus1_	vicinus
-SRR25452767__floridanus_	floridanus
-SRR25452768__floridanus_	floridanus
-SRR25452771__floridanus_	floridanus
+SRR25452767__floridanus_	Outgroup
+SRR25452768__floridanus_	Outgroup
+SRR25452771__floridanus_	Outgroup
