@@ -1,8 +1,6 @@
 C002__modoc_east_
 C003__laevissimus_
-C004__new1_
 C005__T_vicinus1_
-C010__new1_
 C016__new2_
 C018__new2_
 C041__modoc_east_
@@ -40,11 +38,6 @@ C284__quercicola_
 C291__quercicola_
 C299b__laevissimus_
 C303b__new_
-C304b__new_
-C305b__new_
-C306b__new_
-C308b__new_
-C310b__new2_
 C354__texanus_
 C357__texanus_
 C359__Myrmentoma_
@@ -52,8 +45,6 @@ C361__texanus_
 C364__texanus_
 C365__Myrmentoma_
 C368__Myrmentoma_
-C371__new_
-C372__new_
 C402__novaeboracencis_
 C404__modoc_west_
 C408__novaeboracencis_
