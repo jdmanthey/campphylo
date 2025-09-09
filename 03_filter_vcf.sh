@@ -27,6 +27,12 @@ vcftools --vcf ${workdir}/04_vcf/${region_array}.vcf --keep phylo.txt --max-miss
 --min-alleles 2 --max-alleles 2 --mac 2 --max-maf 0.49 --recode --recode-INFO-all \
 --out ${workdir}/08_gene_flow/${region_array}
 
+# for MrBayes -> SNAQ
+vcftools --vcf ${workdir}/04_vcf/${region_array}.vcf --keep phylo_subset.txt --max-missing 0.93 \
+--max-alleles 2 --max-maf 0.49 --recode --recode-INFO-all \
+--out ${workdir}/11_mrbayes/${region_array}
+
+
 # for new species EEMS + ADMIXTURE + PCA
 vcftools --vcf ${workdir}/04_vcf/${region_array}.vcf --keep new.txt --max-missing 1.0 \
 --min-alleles 2 --max-alleles 2 --max-maf 0.49 --mac 2 --recode --recode-INFO-all \
