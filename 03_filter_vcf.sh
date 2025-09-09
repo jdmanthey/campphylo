@@ -58,5 +58,8 @@ bgzip ${workdir}/05_filtered_vcf/${region_array}.recode.vcf
 tabix ${workdir}/05_filtered_vcf/${region_array}.recode.vcf.gz
 
 
+# zip and index the SNAQ files
+bgzip ${workdir}/11_mrbayes/${region_array}.recode.vcf
 
+tabix ${workdir}/11_mrbayes/${region_array}.recode.vcf.gz
 
