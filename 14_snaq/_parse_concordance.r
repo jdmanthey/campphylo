@@ -23,9 +23,10 @@ nl <- sapply(strsplit(nl, "= "), "[[", 2)
 nl <- sum(as.numeric(sapply(strsplit(nl, " \\("), "[[", 1)))
 
 # mean CF
-meanCF <- x[grep("mean CF", x)]
-meanCF <- sapply(strsplit(meanCF, "   "), "[[", 2)
+meanCF <- x[grep("number of loci", x)]
+meanCF <- sapply(strsplit(meanCF, "= "), "[[", 2)
 meanCF <- as.numeric(sapply(strsplit(meanCF, " \\("), "[[", 1))
+meanCF <- meanCF / nl
 
 # 95% CI CF low
 lowCF <- x[grep("95% CI for CF", x)]
@@ -46,10 +47,23 @@ combined <- data.frame(splits=as.character(splits), meanCF=as.numeric(meanCF), l
 # sort
 combined <- combined[order(combined$splits),]
 
+# pull out information needed into empty matrix
+# this allows some information to be missing (e.g., splits with zero support are not reported)
+mat <- matrix(0, nrow=3, ncol=3)
+combos <- c("{1,2|3,4}","{1,3|2,4}", "{1,4|2,3}")
+for(a in 1:length(combos)) {
+	a_rep <- combined[combined[,1] == combos[a],]
+	if(nrow(a_rep) == 1) {
+		mat[a,1] <- a_rep[1,2]
+		mat[a,2] <- a_rep[1,3]
+		mat[a,3] <- a_rep[1,4]
+	}
+}
+
 # order of output:
 # taxon1	 taxon2	taxon3	taxon4	CF12.34	CF12.34_lo	CF12.34_hi	
 # CF13.24	CF13.24_lo	CF13.24_hi	CF14.23	CF14.23_lo	CF14.23_hi	ngenes
-output <- c(quartet, as.character(combined[1,2:4]), as.character(combined[2,2:4]),as.character(combined[3,2:4]), as.character(nl))
+output <- c(quartet, as.character(mat[1,]), as.character(mat[2,]),as.character(mat[3,]), as.character(nl))
 
 # write output
 outname <- paste0("run", args[2], "_CF.txt")
