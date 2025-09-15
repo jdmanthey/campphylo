@@ -32,6 +32,10 @@ vcftools --vcf ${workdir}/04_vcf/${region_array}.vcf --keep phylo_subset.txt --m
 --max-alleles 2 --max-maf 0.49 --recode --recode-INFO-all \
 --out ${workdir}/11_mrbayes/${region_array}
 
+# for MCMCtree
+vcftools --vcf ${workdir}/04_vcf/${region_array}.vcf --keep mcmctree_subset.txt --max-missing 1.0 \
+--max-alleles 2 --max-maf 0.49 --recode --recode-INFO-all \
+--out ${workdir}/07_mcmctree/${region_array}
 
 # for new species EEMS + ADMIXTURE + PCA
 vcftools --vcf ${workdir}/04_vcf/${region_array}.vcf --keep new.txt --max-missing 1.0 \
