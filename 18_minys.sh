@@ -6,7 +6,7 @@
 #SBATCH --partition=nocona
 #SBATCH --time=48:00:00
 #SBATCH --mem-per-cpu=6G
-#SBATCH --array=1-60
+#SBATCH --array=1-71
 
 source activate minys
 
