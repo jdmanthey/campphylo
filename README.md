@@ -2,13 +2,13 @@
 cophylogenetic analysis of North American Camponotus and their endosymbionts, w/ comparative genomics of Blochmannia endosymbionts, and description of a new species
 
 Description of scripts: \
-00_setup.sh -> \
-01_align_genotype.sh -> \
-02_merge_vcf.sh -> \
-03_filter_vcf.sh -> \
-04_make_phylo_scripts.r -> \
-05_stat_array.sh -> \
-06_combine_phylogenies.r -> \
+00_setup.sh -> index reference and setup directory structure\
+01_align_genotype.sh -> filter, align, genotype each sample\
+02_merge_vcf.sh -> merge individuals' VCF files together\
+03_filter_vcf.sh -> filter VCF files for downstream analyses\
+04_make_phylo_scripts.r -> R script to create an array job to run RAxML\
+05_stat_array.sh -> estimate statistics in sliding windows, uses _window_stat_calculations.r script\
+06_combine_phylogenies.r -> combine window phylogenies to single file\
 06b_combine_stats.sh -> \
 07_prune_trees_for_twisst.r -> \
 07_species_trees.sh -> \
@@ -39,7 +39,7 @@ Description of scripts: \
 19_pgap.sh -> \
 20_process_bloch_genomes.sh -> \
 _vcf_to_matrix.r -> \
-_window_stat_calculations.r -> \
+_window_stat_calculations.r -> used in 05_stat_array.sh to calculate sliding window statistics\
 _write_mrbayes.r -> \
 contam_check.r -> \
 
