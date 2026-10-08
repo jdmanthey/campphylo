@@ -19,19 +19,19 @@ Description of scripts: \
 12_raxml_blochmannia.sh -> \
 13_dsuite.sh -> \
 14_snaq -> \
-&nbsp;&nbsp;&nbsp;|-> 01_make_mrbayes_script.r -> \
-  |-> 02_mbsum.sh -> \
-  |-> 03_bucky_array.sh -> \
-  |-> 04_cat_bucky_CFs.r -> \
-  |-> 05_merge_tree_files.r -> \
-  |-> 06_astral_of_mrbayes_trees.sh -> \
-  |-> 07_snaq.jl -> \
-  |-> 08_bootsnaq.sh -> \
-  |-> 09_cat_bootsnaq.sh -> \
-  |-> 10_summarize_bootsnaqs_on_tree.jl -> \
-  |-> _parse_concordance.r -> \
-  |-> _runSNaQ.jl -> \
-  |-> _write_quartet.r -> \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-> 01_make_mrbayes_script.r -> \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-> 02_mbsum.sh -> \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-> 03_bucky_array.sh -> \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-> 04_cat_bucky_CFs.r -> \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-> 05_merge_tree_files.r -> \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-> 06_astral_of_mrbayes_trees.sh -> \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-> 07_snaq.jl -> \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-> 08_bootsnaq.sh -> \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-> 09_cat_bootsnaq.sh -> \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-> 10_summarize_bootsnaqs_on_tree.jl -> \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-> _parse_concordance.r -> \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-> _runSNaQ.jl -> \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-> _write_quartet.r -> \
 15_vcf_to_matrix.sh -> \
 16_convert_matrix_to_phylip_site_patterns.r -> \
 17_mcmctree.sh -> \
