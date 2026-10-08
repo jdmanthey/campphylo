@@ -2,12 +2,10 @@
 cophylogenetic analysis of North American Camponotus and their endosymbionts, w/ comparative genomics of Blochmannia endosymbionts, and description of a new species
 
 Description of scripts:
-00_setup.sh -> 
-
-01_align_genotype.sh -> 
-
-02_merge_vcf.sh -> 
-03_filter_vcf.sh -> 
+00_setup.sh -> \
+01_align_genotype.sh -> \
+02_merge_vcf.sh -> \
+03_filter_vcf.sh -> \
 04_make_phylo_scripts.r -> 
 05_stat_array.sh -> 
 06_combine_phylogenies.r -> 
