@@ -3,6 +3,7 @@ cophylogenetic analysis of North American Camponotus and their endosymbionts, w/
 
 Description of scripts: \
 00_setup.sh -> index reference and setup directory structure\
+
 01_align_genotype.sh -> filter, align, genotype each sample\
 02_merge_vcf.sh -> merge individuals' VCF files together\
 03_filter_vcf.sh -> filter VCF files for downstream analyses\
